@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"/>
+
+
+      <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+    <title>Global Chef</title>
+  </head>
+  <body>
+
+               <!-- Modal  for sign in-->
+  <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="sininLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome Back!</h5>
+          <i class="fas fa-times-circle text-danger"  data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+            <form>
+                <!-- FullName input -->
+                <div class=" fullname  form-outline mb-2 ">
+                  <input  type="text" id="SignIn1" class="form-control" placeholder="Full Name"/> 
+                  <i class="fas fa-user"></i>
+                </div>
+              
+                <!-- Password input -->
+                <div class=" form-outline mb-3 mt-3">
+                <input type="password" id="SignIn1" class="form-control" placeholder="Password"/>
+                <i class="fas fa-lock"></i>
+                </div>
+              
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                  </div>
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-danger btn-block my-3 ">Sign in</button>
+                <p class="my-3 text-center" >Or</p>
+                <button type="submit" class="btn btn-primary btn-block my-3">Continue with Facebook</button>
+                <button type="submit" class="btn btn-danger btn-block mt-3">Continue with Google</button>
+
+                <div class="col text-center mt-1">
+                    <!-- Simple link -->
+                  <br> <p> Or <a href="#!">Forget</a</P>
+                  </div>
+                  <div class="modal-footer">
+                    <p class="m-auto">Don't have an account? <strong>Sign Up</strong></p>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="Mother">
+         <div class="son">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#"> <img src="Images/PNGIX.com_chef-png_490598.png" alt="logo" class="img-fuild" width="30"> <span><span class="text-warning">Global</span><span class="text-danger">Chef</span></span></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 margin-center">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active text-white" aria-current="page" href="./About.html">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Classes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./Class-About.html">About</a></li>
+                      <li><a class="dropdown-item" href="./Classes-Resources.html">Resources</a></li>
+                      <li><a class="dropdown-item" href="./Enrolled Classes.html">Enrolled Classes</a></li>
+                      <li><a class="dropdown-item" href="./Top Classes.html">Saved Classes</a></li>
+                      <li><a class="dropdown-item" href="./Classes.html">Categories</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active text-white" aria-current="page" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="ms-auto">
+                  <button class="rounded btn btn-outline-warning d-inline" type="button" data-bs-toggle="modal" data-bs-target="#signin">Sign in</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+         </div>
+    <div class="text-center cooking">
+            <p class="mt-5 pt-5 pb-0 text-warning">Cooking is fun! We will prove it to you</p>
+            <br>
+            <h1 class=" pb-5 text-white">Get unlimited access to the <br> world of food</h1>
+            <a class=" rounded btn btn-danger mt-2 mb-5 w-30" href="" role="button" data-bs-toggle="modal" data-bs-target="#GetStarted">Get started</a>
+          </div>
+    </div>
+    
+
+      <!-- Modal for Get started -->
+<div class="modal fade" id="GetStarted" tabindex="-1" aria-labelledby="GetStartedLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up and start learning</h5>
+          <i class="fas fa-times-circle text-danger"  data-bs-dismiss="modal" aria-label="Close"></i>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+          <form>
+            <!-- FullName2 input -->
+            <div class=" form-outline my-3 ">
+              <input  type="text" id="" class="form-control" placeholder="Full Name"/> 
+              <i class="fas fa-user name"></i>
+            </div>
+  
+             <!-- Email address input -->
+             <div class="form-outline my-3 ">
+              <input  type="text" id="" class="form-control" placeholder="Email Address"/> 
+              <i class="fas fa-envelope message"></i>
+            </div>
+            
+            <!-- Phone Number input -->
+            <div class="form-outline my-3">
+            <input type="Number" id="" class="form-control" placeholder="Phone Number"/>
+            <i class="fas fa-phone call"></i>
+            </div>
+           
+            <!-- Password input -->
+            <div class=" form-outline my-3">
+            <input type="password" id="" class="form-control" placeholder="Password"/>
+            <i class="fas fa-lock password"></i>
+            </div>
+                      <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="form1Example3"
+                  checked
+                />
+                <label class="form-check-label" for="form1Example3"> Yes, I want to get the most out of GlobalChef by receiving emails with exclusive deals, personal recommendations and learning tips. </label>
+              </div>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-danger btn-block my-3 ">Sign Up</button>
+            <p class="my-3 text-center" >By signing up, you agree to our Terms of Use and Privacy Policy</p>
+            <p class="or text-center my-3">Or</p>
+            <button type="submit" class="btn btn-primary btn-block my-3">Continue with Facebook</button>
+            <button type="submit" class="btn btn-danger btn-block mt-3">Continue with Google</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+
+           <!-- Session for why Choose us -->
+
+  <div>
+    <h2 class="text-dark text-center my-5"> Why Choose Global Chef</h2>
+    <div class="row">
+      <div class="col-md-4 border-end">
+          <img src="./images/XMLID_130_.svg" class=" mx-auto d-block " alt="">
+          <h3 class="text-danger text-center mt-3">Wide Variety of food</h3>
+          <p class="text-center">Get free access to unlimited food <br> tutorials and get to enjoy the <br> beauty of cooking.</p>
+      </div>
+      <div class="col-md-4 border-end">
+          <img src="./images/pizza.svg" class=" mx-auto d-block" alt=""> 
+          <h3 class="text-danger text-center mt-3">Seasoned Chefs</h3>
+          <p class="text-center">Learn the tricks and tips from top chefs <br> all over the world and impress your <br> friends at home</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./images/pizza (1).svg" class="mx-auto d-block" alt="">
+          <h3 class="text-danger text-center mt-3">Meet and Share</h3>
+          <p class="text-center">Access good job opportunities in <br> our partner schools.</p>
+      </div>
+  </div>
+</div>
+        <!-- session for Top Class -->
+
+    <div class="Top-class my-5">
+      <div class="container">
+          <h2 class="text-dark text-center pt-5">Top Classes</h2>
+          <p class="text-center">Your professional development has just gotten easier, affordable and exciting with our online courses. They are designed to <br> equip you with 21st century teaching and learning skills.</p>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img
+                  src="./images/davide-cantelli-jpkfc5_d-DI-unsplash.png"
+                  class="img-fluid card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="text-start"> 300 Students <span class="float-end">1hr 40min</span> </p>
+                  <p class="card-text">
+                    Serve your breakfast like a boss and have a diet on
+                  </p>
+                  <p>Chef Michael Akpan</p>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <span><p class="d-inline">4.5</p></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img
+                  src="./images/gelato.png"
+                  class=" card-img-top img-fluid "
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="text-start"> 300 Students <span class="float-end">1hr 40min</span> </p>
+                  <p class="card-text">How to make Gelato: Tips and Recipes to make the Italian treat</p>
+                  <p>Chef Manchang Wuyeng</p>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <span><p class="d-inline">4.5</p></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img
+                  src="./images/berbeque.JPG"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="text-start"> 300 Students <span class="float-end">1hr 10min</span> </p>
+                  <p class="card-text">How to make Gelato: Tips and Recipes to make the Italian treat</p>
+                  <p>Chef kola Ajisegiri</p>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <span><p class="d-inline">5.0</p></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100">
+                <img
+                  src="./images/cooked-rice.JPG"
+                  class="card-img-top img-fluid"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="text-start"> 300 Students <span class="float-end">1hr 10min</span> </p>
+                  <p class="card-text">Learn how to cook rice spiced with fried shrimps</p>
+                  <p>Chef Michael Akpan</p>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <i class="fas fa-star d-inline Checked"></i>
+                  <span><p class="d-inline">4.0</p></span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+    <button type="button" class=" rounded btn btn-outline-danger mx-auto d-block explore my-2 mb-5" data-mdb-ripple-color="dark">
+      Explore all Classes
+  </div>
+  <!-- Session for Thought about our work-->
+      <div class="Thought">
+           <div class="container ">
+              <h2 class="text-warning pt-3 pb-5 text-center ">Thoughts About Our Work</h2>
+              <i class="fas fa-quote-left pe-5"></i>
+              <div class="row container">
+                <div class="col-md-4">
+                  <img src="./images/Ellipse 1.png" class="img-fluid img ps-5" alt="">
+                </div>     
+                <div class="col-md-8">
+                <p class="text-white">I thought about the times in my life when I couldn't even afford $5 <br> for a book. That's when it hit me. Wouldn't it be cool if the price tag <br> said, '5 jumping jacks and a sit-up. Chris raised $70k to help his <br> neighbor Norma stay in her home.</p>
+                <p class="text-warning">Devil Roy Barman</p>
+                </div>
+              </div>
+                    
+                <i class="fas fa-quote-right mx-5"></i>
+            </div>
+      </div>
+
+     <!-- Session for our Tutor -->
+
+     <div class="Tutor">
+      <div class="container">
+        <h2 class="mt-5">Our Tutors</h2>
+        <p>We provide world class chefs to take classes as well as guide learners on their <br> journey through the world of food. Our tutors are fully certified chefs.</p>
+      </div>
+
+                     <!-- CARD CAROUSEL -->
+
+                <!-- Carousel wrapper -->
+                <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center"
+                    data-mdb-ride="carousel">
+                    <!-- Controls -->
+                    <div class="d-flex justify-content-center mb-4">
+                        <button class="carousel-control-prev position-absolute" type="button"
+                            data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-absolute" type="button"
+                            data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Inner -->
+                    <div class="carousel-inner ">
+                        <!-- Single item -->
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./images/601148-PMYU1A-766/charanjeet-dhiman-9xObRZdEN7g-unsplash.jpg"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Birgit Schreiner</h5>
+                                                <p class="card-text">
+                                                    China
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i
+                                                            class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i
+                                                            class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i
+                                                            class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i
+                                                            class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 ">
+                                        <div class="card">
+                                            <img src="./images/601148-PMYU1A-766/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Brend Frey</h5>
+                                                <p class="card-text">
+                                                    Paris
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./images/chef 5.png"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Muyiwa Akintola</h5>
+                                                <p class="card-text">
+                                                    Nigeria
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <div class="card">
+                                          <img src="./images/601148-PMYU1A-766/mealpro-9IQ1pTh06yA-unsplash.jpg"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title">Jacob Zuma</h5>
+                                              <p class="card-text">
+                                                  South Africa
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="carousel-item">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <img src="./images/601148-PMYU1A-766/tr-ng-trung-c-p-kinh-t-du-l-ch-thanh-ph-h-chi-minh-cet-2EV2oa3eg88-unsplash.jpg"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title">Daniel Frosh</h5>
+                                              <p class="card-text">
+                                                  Belgium
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <img src="./images/chef 5.png"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title">Segun Damola</h5>
+                                              <p class="card-text">
+                                                  Nigeria
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <img src="./images/601148-PMYU1A-766/louis-hansel-shotsoflouis-gIxrzfRZN-s-unsplash.jpg"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title">Jonathan Macedo</h5>
+                                              <p class="card-text">
+                                                  Spain
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <div class="card">
+                                          <img src="./images/601148-PMYU1A-766/johnathan-macedo-4NQEvxW2_4w-unsplash.jpg"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title">Frank Zidane</h5>
+                                              <p class="card-text">
+                                                  france
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card">
+                                            <img src="./images/601148-PMYU1A-766/mealpro-9IQ1pTh06yA-unsplash.jpg"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Triana george</h5>
+                                                <p class="card-text">
+                                                    Sweden
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card">
+                                            <img src="./images/601148-PMYU1A-766/louis-hansel-shotsoflouis-gIxrzfRZN-s-unsplash.jpg"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Louis Hansel</h5>
+                                                <p class="card-text">
+                                                    Germany
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 mb-4">
+                                        <div class="card">
+                                            <img src="./images/601148-PMYU1A-766/toa-heftiba-5JeTin55H9U-unsplash.jpg"
+                                                class="card-img-top" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Toa Heftiba </h5>
+                                                <p class="card-text">
+                                                    Taiwan
+                                                </p>
+                                                <div>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                    <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                      <div class="card">
+                                          <img src="./images/chef 5.png"
+                                              class="card-img-top" alt="..." />
+                                          <div class="card-body">
+                                              <h5 class="card-title"> Abioye Victor </h5>
+                                              <p class="card-text">
+                                                  Nigeria
+                                              </p>
+                                              <div>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-primary text-white p-2 rounded-circle  "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-twitter bg-info text-white p-2 rounded-circle    "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-instagram bg-danger text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                                  <a href="#" class="mx-2"> <i class="fab fa-pinterest-p bg-warning text-white p-2 rounded-circle   "></i>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Inner -->
+                </div>
+                <!-- Carousel wrapper -->
+     </div>
+
+                      <!-- Session for Contact us-->
+
+                  <div>
+                      <div class="row">
+                        <div class="col-md-2 mt-5 get-in-touch">
+                        </div>
+                        <div class="col-md-5 mt-5 get-in-touch">
+                          <p>Get in Touch</p>
+                          <strong>Contact Us</strong>
+                          <form>
+                            <div class="row">
+                              <div class="col-md-6">
+
+                            <!-- Phone Number -->
+                            <div class="form-outline mb-4">
+                              <input type="number" id="form4Example1" class="form-control phone-number" placeholder="Phone Number" />
+                              <i class="fas fa-phone phone-Number"></i>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+
+                            <!-- Email Input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" id="form4Example1" class="form-control Email" placeholder="Email Address" />
+                              <i class="fas fa-envelope Email-address"></i>
+                            </div>
+                          </div>    
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+
+                            <!-- Full Name Input -->
+                            <div class="form-outline mb-4">
+                              <input type="text" id="form4Example1" class="form-control Full-Name" placeholder="Full Name" />
+                              <i class="fas fa-user full-name"></i>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+
+                            <!-- Topic Input -->
+                            
+                            <div class="form-outline mb-4">
+                              <input type="text" id="form4Example1" class="form-control Topic" placeholder="Topic" />
+                              <i class="fas fa-tag topic"></i>
+                            </div>
+                            
+                          </div>    
+                            </div>
+                            <!-- Message input -->
+                            <div class="form-outline mb-4 ">
+                              <textarea class="form-control Message" id="form4Example3" rows="4" placeholder="Message"></textarea>
+                              <i class="fas fa-comment message"></i>
+                            </div>
+                           
+                          
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-danger rounded-2 mb-4 w-25">Send</button>
+                          </form>
+
+
+                        </div>
+                        <div class="col-md-5 Helen-Kell">
+                            <div class="row">
+                              <div class="col-md-7">
+                              <div class="kell">
+                                <p class="text-white text-break"> <strong> Cooking is an art. Learn, gather and create the masterpiece </strong> </p> 
+                                <p class="text-white float-end"> <strong> Helen Kell </strong></p>
+                              </div>
+                            </div> 
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- session for Footer -->
+
+                      <div class="bg-black">
+                        <div class="row container ">
+                          <div class="col-md-2">
+                          </div>
+                          <div class="col-md-4 py-5">
+                            <strong><span class="text-warning">Global</span><span class="text-danger">Chef</span></span></strong>
+                            <p class="text-break text-white ">Core values are the fundamental beliefs of a person or organization. The core values are the guiding principles that dictate the services we provide to our partners and students. Global chef provides the best information about food.</p>
+                            <div>
+                              <a href="#" class="mx-2"> <i class="fab fa-facebook-f  bg-white text-black p-1 rounded-circle  "></i>
+                              </a>
+                              <a href="#" class="mx-2"> <i class="fab fa-google-plus bg-white text-black p-1 rounded-circle    "></i>
+                              </a>
+                              <a href="#" class="mx-2"> <i class="fab fa-twitter bg-white text-black p-1 rounded-circle   "></i>
+                              </a>
+                              <a href="#" class="mx-2"> <i class="fab fa-linkedin-in bg-white text-black p-1 rounded-circle   "></i>
+                              </a>
+                          </div>
+                          </div>
+                          <div class="col-md-4 py-5" id="contact">
+                              <p></p><strong class="text-white">Contact Us</strong></p>
+                              <i class="fas fa-map-marker-alt d-inline text-danger"></i>
+                              <p class="d-inline text-white mt-3">No 12, Fola Jinadu Street, Gbagada , Lagos</p> <br>
+                                <i class="fas fa-phone d-inline text-danger"></i>
+                                <p class="d-inline text-white mt-3">Support: +2348089143428</p> <br>
+                                <i class="fas fa-envelope d-inline text-danger"></i>
+                                <p class="d-inline text-white mt-3">Email: info@globalchef.com.ng</p> <br>
+                                <form class="d-flex input-group mt-3">
+                                  <input
+                                    type="search" class="form-control" placeholder="Email Address" aria-label="Submit"/>
+                                  <button
+                                    class="btn btn-outline-white"type="button"data-mdb-ripple-color="white">Search
+                                  </button>
+                                </form>                          
+                          </div>
+                            
+                          <div class="col-md-2 py-5">
+                            <ul>
+                              <strong>
+                              <li class="nav-link"><a class="text-white" aria-current="page" href="#Home" target="_blank">Home</a></li>
+                              <li class="nav-link"><a class="text-white" href="./About.html" target="_blank">About Us</a></li>
+                              <li class="nav-link"><a class="text-white" href="./Classes.html" target="_blank">Classes</a></li>
+                              </strong>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr class="bg-white container w-75">
+                        <footer class="text-white container text-center"> 
+                          <p class="d-inline  mx-3">Copyrights © 2019 GlobalChef Studio. </p> 
+                           <span class="d-inline mx-2 ">All rights reserved.</span> 
+                           <span class=" d-inline mx-2"> Privacy Policy  Terms of Use </span> 
+                      </footer>
+                      </div>
+                          
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

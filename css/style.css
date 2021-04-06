@@ -1,0 +1,187 @@
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.Mother{
+    font-family: 'RocknRoll One', sans-serif;
+    background-image: url(../images/2476071@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.son{
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* styling for Signin and Get Started button */
+
+.form-control{
+    position: relative !important;
+    padding-left: 25px !important;
+    caret-color: red !important;
+}
+.fa-user{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.fa-lock{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.name{
+    position: absolute;
+    top: 10px !important;
+    left: 5px !important;
+}
+.call{
+    position: absolute;
+    top: 10px !important;
+    left: 5px !important;
+}
+.message{
+    position: absolute;
+    top: 10px !important;
+    left: 5px !important;
+}
+.password{
+    position: absolute;
+    top: 10px !important;
+    left: 5px !important;
+}
+.fa-times-circle{
+    font-size: 30px;
+}
+
+/* End of styling for Signin and Get Started button */
+
+/* Styling for Top class session */
+
+.Top-class{
+    background-color: #F6F6F6;
+}
+.Checked{
+    color: orange;
+}
+
+/* Styling for Thought about our work */
+
+.Thought{
+background-image: url(../images/lukas-blazek-f-TWhXOrLiU-unsplash\ \(1\).png);
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.9;
+padding-bottom: 100px;
+}
+
+.fa-quote-left{
+    font-size: 30px;
+}
+.fa-quote-right{
+    font-size: 30px;
+    float: right !important;
+}
+
+/* Styling for our Tutor work */
+.Tutor{
+    margin-bottom: 100px;
+}
+
+.Helen-Kell{
+    background-image: url(../images/601148-PMYU1A-766.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style for contact us form */
+.phone-number{
+    position: relative;
+}
+
+.phone-Number{
+    position: absolute;
+    top: 9px !important;
+    left: 2px !important;
+}
+.Email{
+    position: relative;
+}
+.Email-address{
+    position: absolute;
+    top: 9px !important;
+    left: 3px !important;
+}
+.Full-Name{
+    position: relative;
+}
+.full-name{
+    position: absolute;
+    top: 9px !important;
+    left: 3px !important;
+}
+.Topic{
+    position: relative;
+}
+.topic{
+    position: absolute;
+    top: 9px !important;
+    left: 3px !important;
+}
+ .Message{
+    position: relative;
+}
+.message{
+    position: absolute;
+    top: 9px !important;
+    left: 3px !important;
+}
+
+.get-in-touch{
+    background-color: #F6F6F6;
+}
+.kell{
+    font-size: larger;
+    border-color: white;
+    border-style: solid;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 40px;  
+}
+
+/* Session for page 4 */
+
+.father{
+    background-color: black;
+    opacity: 0.8;
+}
+.photo{
+    position: relative;
+}
+.Photo{
+    position: absolute;
+    left: 170px;
+    top: 200px;
+}
+.wendy{
+    background-color: #F6F6F6 !important;
+    padding-bottom: 500px;
+    margin-bottom: 100px;
+   
+}
+.davis{
+    background-color: white !important;
+    padding-bottom: 500px;
+    margin-bottom: 100px;
+}
+
+/* session for fith page */
+
+.philip{
+    width: 38%;
+}
+
+
