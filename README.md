@@ -1,7 +1,7 @@
 # Global-Chef
 
 ## Overview
- I Design this website from scratch using HTML, CSS, Boostrap and Javascript. This is my second project I designed using HTML 5< CSS, Boostrap and Javascript 
+ I Design this website from scratch using HTML, CSS, Bootstrap and Javascript. This is my second project I designed using HTML5, CSS, Bootstrap and Javascript 
  
 ## The Project Challenge
 Users should be able to:
@@ -14,18 +14,21 @@ Users should be able to:
 
  
 ## My process
-The project is the second project I design from scratch using HTML 5, CSS, Boostrap, and Javascript and it took me one weeks to complete. I did the project to understand HTML, CSS and Javascript more. It has helped me improve my basic understanding of javascript, HtML, and CSS. I'm motivated me to build other challenging projects using React and other library.
+The project is the second project I design from scratch using HTML5, CSS, Bootstrap, and Javascript and it took me one weeks to complete. I did the project to understand HTML, CSS and Javascript more. It has helped me improve my basic understanding of javascript, HtML, and CSS. I'm motivated me to build other challenging projects using React and other library.
 
 ## Built with
 - HTML5 
 - CSS 
-- Boostrap 5
+- Bootstrap 5
 - CSS Grid
 -Javascript
  
 ## What I learned
-The project makes me understand Boostrap, CSS Framework better. Being my second project I built with HTML, CSS, Boostrap and Javascript I now have better understand of the framework.
+The project makes me understand Bootstrap, CSS Framework better. Being my second project I built with HTML, CSS, Bootstrap and Javascript I now have better understand of the framework.
 
 
 ## Continued development
 I will love to do more projects using React library to improve my skills.
+
+## Deployement
+I deploy on Github and host on Netlify
